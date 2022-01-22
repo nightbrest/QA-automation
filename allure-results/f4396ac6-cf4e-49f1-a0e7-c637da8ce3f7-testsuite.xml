@@ -1,0 +1,99 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1642856574595' stop='1642856580852'>
+    <name>yahoo mail page</name>
+    <title>yahoo mail page</title>
+    <test-cases>
+        <test-case start='1642856574596' status='broken' stop='1642856580851'>
+            <name>should login to yahoo mail box</name>
+            <title>should login to yahoo mail box</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.99'/>
+            </parameters>
+            <steps>
+                <step start='1642856574601' status='passed' stop='1642856578701'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='3d685ae4-6f1b-46c6-8349-faf8b334bfe7-attachment.json' type='application/json' size='37'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642856578703' status='passed' stop='1642856578729'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='5445763f-3a77-436d-b2a1-54bec03a8768-attachment.json' type='application/json' size='62'/>
+                        <attachment title='Response' source='4ae17ef7-91f5-4c8b-a180-fc30720be8c2-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642856578736' status='passed' stop='1642856580607'>
+                    <name>POST /session/:sessionId/element/4a2674b4-af35-4161-9135-ae1a6705df0b/click</name>
+                    <title>POST /session/:sessionId/element/4a2674b4-af35-4161-9135-ae1a6705df0b/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1642856580607' status='passed' stop='1642856580643'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='84470b05-a3ef-4b69-89e8-8a0b7009d807-attachment.json' type='application/json' size='58'/>
+                        <attachment title='Response' source='1576c7cd-a3b8-4131-bece-ca2c9f6774a3-attachment.json' type='application/json' size='1032'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642856580644' status='broken' stop='1642856580851'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='de298992-a80a-424f-b7d7-bc28c5844557-attachment.json' type='application/json' size='1149'/>
+                    </attachments>
+                    <steps>
+                        <step start='1642856580713' status='passed' stop='1642856580850'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='84b19cd1-3291-414f-88a8-c7f56d40934a-attachment.png' type='image/png' size='38530'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>invalid argument: invalid locator
+                  (Session info: chrome=97.0.4692.99)</message>
+                <stack-trace>Backtrace:
+                	Ordinal0 [0x00FBFDC3+2555331]
+                	Ordinal0 [0x00F577F1+2127857]
+                	Ordinal0 [0x00E52E08+1060360]
+                	Ordinal0 [0x00E7E61A+1238554]
+                	Ordinal0 [0x00E7E69B+1238683]
+                	Ordinal0 [0x00EA9252+1413714]
+                	Ordinal0 [0x00E97B54+1342292]
+                	Ordinal0 [0x00EA75FA+1406458]
+                	Ordinal0 [0x00E97976+1341814]
+                	Ordinal0 [0x00E736B6+1193654]
+                	Ordinal0 [0x00E74546+1197382]
+                	GetHandleVerifier [0x01159622+1619522]
+                	GetHandleVerifier [0x0120882C+2336844]
+                	GetHandleVerifier [0x010523E1+541697]
+                	GetHandleVerifier [0x01051443+537699]
+                	Ordinal0 [0x00F5D18E+2150798]
+                	Ordinal0 [0x00F61518+2168088]
+                	Ordinal0 [0x00F61660+2168416]
+                	Ordinal0 [0x00F6B330+2208560]
+                	BaseThreadInitThunk [0x74FDFA29+25]
+                	RtlGetAppContainerNamedObjectPath [0x77167A9E+286]
+                	RtlGetAppContainerNamedObjectPath [0x77167A6E+238]
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

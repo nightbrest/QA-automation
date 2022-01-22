@@ -1,0 +1,107 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1642846000484' stop='1642846001556'>
+    <name>working with created email</name>
+    <title>working with created email</title>
+    <test-cases>
+        <test-case start='1642846000484' status='passed' stop='1642846001080'>
+            <name>should verify that created email is in draft folder</name>
+            <title>should verify that created email is in draft folder</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.99'/>
+            </parameters>
+            <steps>
+                <step start='1642846000485' status='passed' stop='1642846000507'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='16e44bc3-1997-4cf6-9878-293118b72293-attachment.json' type='application/json' size='77'/>
+                        <attachment title='Response' source='91b3b280-942f-4164-ad2e-6f4d57292ffa-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642846000509' status='passed' stop='1642846001080'>
+                    <name>POST /session/:sessionId/element/ef58d40a-5bd9-484a-bd36-772da2cdff9b/click</name>
+                    <title>POST /session/:sessionId/element/ef58d40a-5bd9-484a-bd36-772da2cdff9b/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1642846001081' status='passed' stop='1642846001342'>
+            <name>should open last email in drafts</name>
+            <title>should open last email in drafts</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.99'/>
+            </parameters>
+            <steps>
+                <step start='1642846001081' status='passed' stop='1642846001112'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='aa0a6f23-f642-40c0-89bd-c05553f4dcac-attachment.json' type='application/json' size='86'/>
+                        <attachment title='Response' source='64748498-4cf8-4de0-aa9f-c6d7f454df96-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642846001116' status='passed' stop='1642846001342'>
+                    <name>POST /session/:sessionId/element/46d49548-65d7-41d7-b73e-c6659d297747/click</name>
+                    <title>POST /session/:sessionId/element/46d49548-65d7-41d7-b73e-c6659d297747/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1642846001344' status='broken' stop='1642846001549'>
+            <name>should verify that body of draft email is correct</name>
+            <title>should verify that body of draft email is correct</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.99'/>
+            </parameters>
+            <steps>
+                <step start='1642846001344' status='broken' stop='1642846001549'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1642846001346' status='passed' stop='1642846001543'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='d579ba83-2fd5-4ff3-b4d5-358b06a89a09-attachment.json' type='application/json' size='79'/>
+                                <attachment title='Screenshot' source='b9da8ff7-8b82-4493-9b90-d186b68f1b84-attachment.png' type='image/png' size='295598'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='529ead08-97ed-49a1-a112-77f2cefa75b3-attachment.json' type='application/json' size='83'/>
+            </attachments>
+            <failure>
+                <message>inputSubject is not defined</message>
+                <stack-trace>ReferenceError: inputSubject is not defined
+                    at Context.&lt;anonymous> (C:\Users\Ihar_Vaskaboinikau\Desktop\WebdriverIO-Mocha-JS\test\specs\/qaTask1.js:72:20)
+                    at Context.executeAsync (C:\Users\Ihar_Vaskaboinikau\Desktop\WebdriverIO-Mocha-JS\node_modules\@wdio\utils\build\shim.js:325:27)
+                    at Context.testFrameworkFnWrapper (C:\Users\Ihar_Vaskaboinikau\Desktop\WebdriverIO-Mocha-JS\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

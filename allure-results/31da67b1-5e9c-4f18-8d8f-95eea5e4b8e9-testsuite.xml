@@ -1,0 +1,106 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1642767447311' stop='1642767448004'>
+    <name>working with created email</name>
+    <title>working with created email</title>
+    <test-cases>
+        <test-case start='1642767447311' status='passed' stop='1642767447454'>
+            <name>should verify that created email is in draft folder</name>
+            <title>should verify that created email is in draft folder</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.99'/>
+            </parameters>
+            <steps>
+                <step start='1642767447312' status='passed' stop='1642767447328'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='188132a2-3d57-462e-94e0-30a56e3707fa-attachment.json' type='application/json' size='77'/>
+                        <attachment title='Response' source='5c2935a4-67dc-4758-9d88-3d46c9ca474c-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642767447329' status='passed' stop='1642767447454'>
+                    <name>POST /session/:sessionId/element/3f0401a8-9380-4542-b2ec-200be9a9b728/click</name>
+                    <title>POST /session/:sessionId/element/3f0401a8-9380-4542-b2ec-200be9a9b728/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1642767447455' status='broken' stop='1642767448003'>
+            <name>should verify correct email attributes</name>
+            <title>should verify correct email attributes</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.99'/>
+            </parameters>
+            <steps>
+                <step start='1642767447455' status='passed' stop='1642767447491'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='657fa403-d25f-4b52-898a-0640ae9ab43d-attachment.json' type='application/json' size='181'/>
+                        <attachment title='Response' source='a68b8cb1-870d-44a6-8012-0ea0c5c4ec4e-attachment.json' type='application/json' size='1155'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642767447491' status='broken' stop='1642767448003'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='b10244a9-4234-442e-9b06-bcb334305d99-attachment.json' type='application/json' size='1280'/>
+                    </attachments>
+                    <steps>
+                        <step start='1642767447676' status='passed' stop='1642767448002'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='e5f02a54-f819-4334-bd6e-004e7b1cf29d-attachment.png' type='image/png' size='383912'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>invalid argument: invalid locator
+                  (Session info: chrome=97.0.4692.99)</message>
+                <stack-trace>Backtrace:
+                	Ordinal0 [0x007BFDC3+2555331]
+                	Ordinal0 [0x007577F1+2127857]
+                	Ordinal0 [0x00652E08+1060360]
+                	Ordinal0 [0x0067E61A+1238554]
+                	Ordinal0 [0x0067E69B+1238683]
+                	Ordinal0 [0x006A9252+1413714]
+                	Ordinal0 [0x00697B54+1342292]
+                	Ordinal0 [0x006A75FA+1406458]
+                	Ordinal0 [0x00697976+1341814]
+                	Ordinal0 [0x006736B6+1193654]
+                	Ordinal0 [0x00674546+1197382]
+                	GetHandleVerifier [0x00959622+1619522]
+                	GetHandleVerifier [0x00A0882C+2336844]
+                	GetHandleVerifier [0x008523E1+541697]
+                	GetHandleVerifier [0x00851443+537699]
+                	Ordinal0 [0x0075D18E+2150798]
+                	Ordinal0 [0x00761518+2168088]
+                	Ordinal0 [0x00761660+2168416]
+                	Ordinal0 [0x0076B330+2208560]
+                	BaseThreadInitThunk [0x74FDFA29+25]
+                	RtlGetAppContainerNamedObjectPath [0x77167A9E+286]
+                	RtlGetAppContainerNamedObjectPath [0x77167A6E+238]
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

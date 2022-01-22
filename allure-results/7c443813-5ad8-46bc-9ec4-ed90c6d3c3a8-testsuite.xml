@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1642854755903' stop='1642854756323'>
+    <name>working with page after the email was send</name>
+    <title>working with page after the email was send</title>
+    <test-cases>
+        <test-case start='1642854755903' status='broken' stop='1642854756322'>
+            <name>should verify that send email dissapeared from drafts folder</name>
+            <title>should verify that send email dissapeared from drafts folder</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.99'/>
+            </parameters>
+            <steps>
+                <step start='1642854755904' status='passed' stop='1642854755919'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='992b11b7-0de6-44f6-8557-1c4f62e74f1a-attachment.json' type='application/json' size='77'/>
+                        <attachment title='Response' source='22a0756f-5e52-4690-9537-b1cb798c2b98-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642854755922' status='passed' stop='1642854756005'>
+                    <name>POST /session/:sessionId/element/41a0b67c-0ab8-4898-9dfa-01f61e6a4243/click</name>
+                    <title>POST /session/:sessionId/element/41a0b67c-0ab8-4898-9dfa-01f61e6a4243/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1642854756005' status='passed' stop='1642854756025'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='b0d55aa8-96fe-4d21-b4b7-0b38068f5bd4-attachment.json' type='application/json' size='86'/>
+                        <attachment title='Response' source='4803a512-9d91-44ac-9fda-1f88c64ec1eb-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642854756026' status='passed' stop='1642854756309'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='ab837f0c-a216-4239-991f-76c5e705cb20-attachment.png' type='image/png' size='301613'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>sendEmail is not defined</message>
+                <stack-trace>ReferenceError: sendEmail is not defined
+                    at Context.&lt;anonymous> (C:\Users\Ihar_Vaskaboinikau\Desktop\WebdriverIO-Mocha-JS\test\specs\/qaTask1.js:92:18)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

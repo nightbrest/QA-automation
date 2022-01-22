@@ -1,0 +1,59 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1642684074934' stop='1642684078156'>
+    <name>yahoo mail user page</name>
+    <title>yahoo mail user page</title>
+    <test-cases>
+        <test-case start='1642684074935' status='failed' stop='1642684078156'>
+            <name>verify of correct login</name>
+            <title>verify of correct login</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.71'/>
+            </parameters>
+            <steps>
+                <step start='1642684074936' status='passed' stop='1642684075005'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments>
+                        <attachment title='Response' source='cf1a615c-667c-4969-b8fb-881f75b8b6d9-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642684077951' status='passed' stop='1642684078150'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='1d1329e9-52c8-4a41-b22f-418965fa4de3-attachment.png' type='image/png' size='290494'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Expected values to be strictly equal:
+                + actual - expected
+                
+                + Promise {
+                +   'qaautomation07@yahoo.com — Yahoo Почта'
+                + }
+                - 'qaautomation07@yahoo.com — Yahoo Почта'      
+                      actual expected
+                      
+                      Promise'qaautomation07@yahoo.com [Promise]— {}Yahoo Почта'
+                      </message>
+                <stack-trace>AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+                + actual - expected
+                
+                + Promise {
+                +   'qaautomation07@yahoo.com — Yahoo Почта'
+                + }
+                - 'qaautomation07@yahoo.com — Yahoo Почта'
+                    at Context.&lt;anonymous> (C:\Users\Ihar_Vaskaboinikau\Desktop\WebdriverIO-Mocha-JS\test\specs\/qaTask1.js:35:16)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

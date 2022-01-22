@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1642782171584' stop='1642782172786'>
+    <name>working with created email</name>
+    <title>working with created email</title>
+    <test-cases>
+        <test-case start='1642782171584' status='broken' stop='1642782172784'>
+            <name>should verify that created email is in draft folder</name>
+            <title>should verify that created email is in draft folder</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.99'/>
+            </parameters>
+            <steps>
+                <step start='1642782171585' status='passed' stop='1642782171651'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='f9295d58-9b3c-46ad-9cc5-95bac6b156ba-attachment.json' type='application/json' size='77'/>
+                        <attachment title='Response' source='5c90ae90-d41b-4692-a44d-d7818396441e-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642782171655' status='passed' stop='1642782172449'>
+                    <name>POST /session/:sessionId/element/9262f052-507f-4ca4-9578-ee2c5e75a3b4/click</name>
+                    <title>POST /session/:sessionId/element/9262f052-507f-4ca4-9578-ee2c5e75a3b4/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1642782172450' status='passed' stop='1642782172770'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='02fc69ec-5e6e-4341-8f01-2ab7b36b2853-attachment.png' type='image/png' size='115718'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>alert is not defined</message>
+                <stack-trace>ReferenceError: alert is not defined
+                    at Context.&lt;anonymous> (C:\Users\Ihar_Vaskaboinikau\Desktop\WebdriverIO-Mocha-JS\test\specs\/qaTask1.js:57:9)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1642782172785' status='pending' stop='1642782172785'>
+            <name>should verify correct email attributes</name>
+            <title>should verify correct email attributes</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

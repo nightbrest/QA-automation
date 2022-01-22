@@ -1,0 +1,90 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1642838629620' stop='1642838689635'>
+    <name>yahoo mail page</name>
+    <title>yahoo mail page</title>
+    <test-cases>
+        <test-case start='1642838629621' status='broken' stop='1642838689634'>
+            <name>should login to yahoo mail box</name>
+            <title>should login to yahoo mail box</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.99'/>
+            </parameters>
+            <steps>
+                <step start='1642838629625' status='passed' stop='1642838661128'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='fe93a44e-0ad7-4b71-a982-c56878de1f6b-attachment.json' type='application/json' size='37'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642838661129' status='passed' stop='1642838661151'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='9bd28df8-4741-4ff8-9c0b-a15e80f56fec-attachment.json' type='application/json' size='62'/>
+                        <attachment title='Response' source='c8cefcb4-8aef-41b4-a0ff-4b557d320a4a-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642838661156' status='passed' stop='1642838688150'>
+                    <name>POST /session/:sessionId/element/f9ae87da-f70f-476e-82c5-15e7760f9c38/click</name>
+                    <title>POST /session/:sessionId/element/f9ae87da-f70f-476e-82c5-15e7760f9c38/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1642838688150' status='passed' stop='1642838688185'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='3b871439-2000-40d7-bccd-9f7061281105-attachment.json' type='application/json' size='97'/>
+                        <attachment title='Response' source='a388b7d0-36c0-4b9b-928b-b37c3f1ab494-attachment.json' type='application/json' size='1071'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642838688194' status='passed' stop='1642838688213'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='0308a266-de70-472e-82c1-2b833ee69638-attachment.json' type='application/json' size='97'/>
+                        <attachment title='Response' source='87c2e727-55bf-46be-9a0a-80b618e8bfa1-attachment.json' type='application/json' size='2'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642838688700' status='passed' stop='1642838688742'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='37e2e7d9-2030-4078-88fa-f75be9d5687f-attachment.json' type='application/json' size='97'/>
+                        <attachment title='Response' source='5f30beee-7f50-4938-bed5-e9927452cdfd-attachment.json' type='application/json' size='2'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642838689196' status='passed' stop='1642838689212'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='67df3792-44f7-4a45-b2ee-cad90c0d371f-attachment.json' type='application/json' size='97'/>
+                        <attachment title='Response' source='ede3074b-b4a1-4e5a-ba60-419bcef7f622-attachment.json' type='application/json' size='2'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Timeout of 60000ms exceeded. The execution in the test "yahoo mail page should login to yahoo mail box" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Users\Ihar_Vaskaboinikau\Desktop\WebdriverIO-Mocha-JS\test\specs\qaTask1.js)</message>
+                <stack-trace>Error: Timeout of 60000ms exceeded. The execution in the test "yahoo mail page should login to yahoo mail box" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (C:\Users\Ihar_Vaskaboinikau\Desktop\WebdriverIO-Mocha-JS\test\specs\qaTask1.js)
+                    at createTimeoutError (C:\Users\Ihar_Vaskaboinikau\Desktop\WebdriverIO-Mocha-JS\node_modules\mocha\lib\errors.js:498:15)
+                    at Test.Runnable._timeoutError (C:\Users\Ihar_Vaskaboinikau\Desktop\WebdriverIO-Mocha-JS\node_modules\mocha\lib\runnable.js:431:10)
+                    at Timeout.&lt;anonymous> (C:\Users\Ihar_Vaskaboinikau\Desktop\WebdriverIO-Mocha-JS\node_modules\mocha\lib\runnable.js:246:24)
+                    at listOnTimeout (node:internal/timers:557:17)
+                    at processTimers (node:internal/timers:500:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

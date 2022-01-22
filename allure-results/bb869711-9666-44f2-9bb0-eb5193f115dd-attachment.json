@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@data-test-id=\"compose-button\"]\"}\n  (Session info: chrome=97.0.4692.71)",
+  "stacktrace": "Backtrace:\n\tOrdinal0 [0x007BFDC3+2555331]\n\tOrdinal0 [0x007577F1+2127857]\n\tOrdinal0 [0x00652E08+1060360]\n\tOrdinal0 [0x0067E49E+1238174]\n\tOrdinal0 [0x0067E69B+1238683]\n\tOrdinal0 [0x006A9252+1413714]\n\tOrdinal0 [0x00697B54+1342292]\n\tOrdinal0 [0x006A75FA+1406458]\n\tOrdinal0 [0x00697976+1341814]\n\tOrdinal0 [0x006736B6+1193654]\n\tOrdinal0 [0x00674546+1197382]\n\tGetHandleVerifier [0x00959622+1619522]\n\tGetHandleVerifier [0x00A0882C+2336844]\n\tGetHandleVerifier [0x008523E1+541697]\n\tGetHandleVerifier [0x00851443+537699]\n\tOrdinal0 [0x0075D18E+2150798]\n\tOrdinal0 [0x00761518+2168088]\n\tOrdinal0 [0x00761660+2168416]\n\tOrdinal0 [0x0076B330+2208560]\n\tBaseThreadInitThunk [0x74FDFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77167A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77167A6E+238]\n"
+}

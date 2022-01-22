@@ -1,0 +1,68 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1642843106157' stop='1642843111474'>
+    <name>yahoo mail page</name>
+    <title>yahoo mail page</title>
+    <test-cases>
+        <test-case start='1642843106158' status='broken' stop='1642843111473'>
+            <name>should login to yahoo mail box</name>
+            <title>should login to yahoo mail box</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.99'/>
+            </parameters>
+            <steps>
+                <step start='1642843106159' status='passed' stop='1642843110191'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='e64c9f45-3496-4194-ae4f-6df1ab2c1c57-attachment.json' type='application/json' size='37'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642843110193' status='passed' stop='1642843110223'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='c37d60fb-fccb-42c0-a505-06ae8b9a98b8-attachment.json' type='application/json' size='62'/>
+                        <attachment title='Response' source='d0235601-c551-4fbb-af09-0a235d691cbd-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642843110234' status='passed' stop='1642843110847'>
+                    <name>POST /session/:sessionId/element/86bccdc2-3e56-4029-900c-513144c642d7/click</name>
+                    <title>POST /session/:sessionId/element/86bccdc2-3e56-4029-900c-513144c642d7/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1642843110848' status='passed' stop='1642843110891'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='f2d40a6a-1871-47b7-b740-d471804bba4b-attachment.json' type='application/json' size='58'/>
+                        <attachment title='Response' source='324b6443-f369-4097-b795-fb18b4e406b4-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642843110892' status='passed' stop='1642843111464'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='095d0510-80b9-4baf-834c-516fe61b9201-attachment.png' type='image/png' size='1037435'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>signInButton.click is not a function</message>
+                <stack-trace>TypeError: signInButton.click is not a function
+                    at Context.&lt;anonymous> (C:\Users\Ihar_Vaskaboinikau\Desktop\WebdriverIO-Mocha-JS\test\specs\/qaTask1.js:10:28)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

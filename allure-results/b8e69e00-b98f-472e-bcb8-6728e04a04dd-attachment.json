@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//input[@class=\"pure-button puree-button-primary challenge-button\"]"
+}

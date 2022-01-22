@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1642757915700' stop='1642757916207'>
+    <name>working with created email</name>
+    <title>working with created email</title>
+    <test-cases>
+        <test-case start='1642757915700' status='passed' stop='1642757916207'>
+            <name>should verify that created email is in draft folder</name>
+            <title>should verify that created email is in draft folder</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.99'/>
+            </parameters>
+            <steps>
+                <step start='1642757915700' status='passed' stop='1642757915720'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='4bdb4900-8d20-46a6-98b8-4ff2db517d10-attachment.json' type='application/json' size='77'/>
+                        <attachment title='Response' source='5c10e686-c636-4ac9-a05d-acc6da91c71d-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642757915725' status='passed' stop='1642757916207'>
+                    <name>POST /session/:sessionId/element/65351d71-b990-4667-9973-866cc6a01abc/click</name>
+                    <title>POST /session/:sessionId/element/65351d71-b990-4667-9973-866cc6a01abc/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

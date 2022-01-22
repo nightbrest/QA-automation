@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id=\"ybarAccountMenu\"]\"}\n  (Session info: chrome=97.0.4692.99)",
+  "stacktrace": "Backtrace:\n\tOrdinal0 [0x00FBFDC3+2555331]\n\tOrdinal0 [0x00F577F1+2127857]\n\tOrdinal0 [0x00E52E08+1060360]\n\tOrdinal0 [0x00E7E49E+1238174]\n\tOrdinal0 [0x00E7E69B+1238683]\n\tOrdinal0 [0x00EA9252+1413714]\n\tOrdinal0 [0x00E97B54+1342292]\n\tOrdinal0 [0x00EA75FA+1406458]\n\tOrdinal0 [0x00E97976+1341814]\n\tOrdinal0 [0x00E736B6+1193654]\n\tOrdinal0 [0x00E74546+1197382]\n\tGetHandleVerifier [0x01159622+1619522]\n\tGetHandleVerifier [0x0120882C+2336844]\n\tGetHandleVerifier [0x010523E1+541697]\n\tGetHandleVerifier [0x01051443+537699]\n\tOrdinal0 [0x00F5D18E+2150798]\n\tOrdinal0 [0x00F61518+2168088]\n\tOrdinal0 [0x00F61660+2168416]\n\tOrdinal0 [0x00F6B330+2208560]\n\tBaseThreadInitThunk [0x74FDFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77167A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77167A6E+238]\n"
+}

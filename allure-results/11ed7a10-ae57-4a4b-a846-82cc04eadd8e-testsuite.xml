@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1642782415250' stop='1642782415709'>
+    <name>working with created email</name>
+    <title>working with created email</title>
+    <test-cases>
+        <test-case start='1642782415250' status='broken' stop='1642782415708'>
+            <name>should verify that created email is in draft folder</name>
+            <title>should verify that created email is in draft folder</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.99'/>
+            </parameters>
+            <steps>
+                <step start='1642782415251' status='passed' stop='1642782415267'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='1475ce4c-0258-4cf0-9f1e-b8cc0feddd24-attachment.json' type='application/json' size='77'/>
+                        <attachment title='Response' source='74567e14-5ef3-4e02-b698-08f53c8a9c38-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642782415270' status='passed' stop='1642782415401'>
+                    <name>POST /session/:sessionId/element/1552ec27-7222-4015-9ea0-65ef6e2ef5b2/click</name>
+                    <title>POST /session/:sessionId/element/1552ec27-7222-4015-9ea0-65ef6e2ef5b2/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1642782415401' status='passed' stop='1642782415703'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='5dc4155d-cec4-4671-8192-838fe54c5c4e-attachment.png' type='image/png' size='279811'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>inputReceiver is not defined</message>
+                <stack-trace>ReferenceError: inputReceiver is not defined
+                    at Context.&lt;anonymous> (C:\Users\Ihar_Vaskaboinikau\Desktop\WebdriverIO-Mocha-JS\test\specs\/qaTask1.js:57:21)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1642782415709' status='pending' stop='1642782415709'>
+            <name>should verify correct email attributes</name>
+            <title>should verify correct email attributes</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

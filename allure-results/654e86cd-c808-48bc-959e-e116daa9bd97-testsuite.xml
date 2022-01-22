@@ -1,0 +1,67 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1642791003113' stop='1642791009339'>
+    <name>working with created email</name>
+    <title>working with created email</title>
+    <test-cases>
+        <test-case start='1642791003114' status='passed' stop='1642791004012'>
+            <name>should verify that created email is in draft folder</name>
+            <title>should verify that created email is in draft folder</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.99'/>
+            </parameters>
+            <steps>
+                <step start='1642791003114' status='passed' stop='1642791003135'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='04735fdc-07fa-48d2-9986-395b014ee4bc-attachment.json' type='application/json' size='77'/>
+                        <attachment title='Response' source='30bfd5b3-f820-4367-a46a-4bc6d3ebaf6b-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642791003140' status='passed' stop='1642791004012'>
+                    <name>POST /session/:sessionId/element/58fdea5d-6ea7-4e04-ac3b-21f483b4be48/click</name>
+                    <title>POST /session/:sessionId/element/58fdea5d-6ea7-4e04-ac3b-21f483b4be48/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1642791004012' status='passed' stop='1642791009338'>
+            <name>should verify correct email attributes</name>
+            <title>should verify correct email attributes</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.99'/>
+            </parameters>
+            <steps>
+                <step start='1642791004013' status='passed' stop='1642791004042'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='fe19f0fb-5ae7-4a6e-9fd2-9df54b5a5c61-attachment.json' type='application/json' size='86'/>
+                        <attachment title='Response' source='f75b1871-c6ee-410e-aadc-5cf162a213dd-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1642791004048' status='passed' stop='1642791004324'>
+                    <name>POST /session/:sessionId/element/638a9a8b-ddfe-44d5-98de-8972801b34bc/click</name>
+                    <title>POST /session/:sessionId/element/638a9a8b-ddfe-44d5-98de-8972801b34bc/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

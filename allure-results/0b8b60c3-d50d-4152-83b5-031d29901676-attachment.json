@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//span[@data-test-id=\"draft-indicator\"][1]"
+}

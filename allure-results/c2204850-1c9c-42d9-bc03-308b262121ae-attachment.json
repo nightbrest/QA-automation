@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//a[contains(@aria-label, \"Ihar_Vaskaboinikau@epam.com\")and(\"Тема: Test subject\")and(\"Сводка: Hello, world! Hello, world! Hello, world!\")][1]"
+}
