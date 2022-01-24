@@ -21,7 +21,7 @@ describe('yahoo mail page', ()=> {
         
         const forwarPassButton = $('//button[@id="login-signin"]');
         await forwarPassButton.click();
-        });
+    });
 });
 
 describe('yahoo mail user page', ()=> {
@@ -50,9 +50,6 @@ describe('working with mail', ()=> {
     // / verifying that created email is in drafts folder with correct body
 describe('working with created email', ()=> {
     it('should verify that created email is in draft folder', async function() {
-        // const ArchiveButton = await $('//a[@data-test-folder-name="Archive"]');
-        // await ArchiveButton.click();
-
         const draftsButton = await $('//span[@data-test-folder-name="Draft"]');
         await draftsButton.click();
         await browser.pause(3000);
@@ -84,6 +81,7 @@ describe('working with created email', ()=> {
         await sendButton.click();
     });   
 });
+
 describe('working with page after the email was send', ()=> {
     it('should verify that send email dissapeared from drafts folder', async function() {
         const draftsButton = await $('//span[@data-test-folder-name="Draft"]');
