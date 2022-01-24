@@ -104,7 +104,6 @@ describe('working with page after the email was send', ()=> {
     });
 
     it('should log off', async function() {
-        // const accountButton = 
         await $('//input[@id="ybarAccountMenu"]').moveTo();
         
         const logOffButton = await $('//a[@id="profile-signout-link"]');
