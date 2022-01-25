@@ -3,7 +3,6 @@ describe("Should proceed to yahoo mail page from yahoo.com/open mail credentials
     it('Step 1 - Should proceed to yahoo mail page from yahoo.com/ verify that it is mail page', async function() {
         await browser.url('https://www.yahoo.com');
         await $('//a[@id="ybarMailLink"]').click();
-
         expect ($('//div[@id="going-places"]')).toHaveTextContaining("Yahoo Mail");
     })
        
@@ -11,7 +10,6 @@ describe("Should proceed to yahoo mail page from yahoo.com/open mail credentials
         const signInButton = await browser.findElement('xpath','//a[@alt="Sign in"]');
         const existButton = await $(signInButton);
         await existButton.click();
-
         expect ($('//div[@id="going-places"]')).toHaveAttrContaining('id="login-username-form"');
     });
 
@@ -20,7 +18,6 @@ describe("Should proceed to yahoo mail page from yahoo.com/open mail credentials
         await $('//input[@id="login-signin"]').click();
         await $('//input[@id="login-passwd"]').addValue('suHGals126');
         await $('//button[@id="login-signin"]').click();
-
         expect(await browser.getTitle()).toHaveText("qaautomation07@yahoo.com — Yahoo Почта");
     });    
 });
@@ -31,7 +28,6 @@ describe('Should create new email by filiing receiver, subject and message field
         await $('//input[@id="message-to-field"]').addValue('Ihar_Vaskaboinikau@epam.com');
         await $('//input[@data-test-id="compose-subject"]').addValue('Test subject');
         await $('//div[@data-test-id="rte"]').addValue('Hello, world! Hello, world! Hello, world!');
-
         expect('//div[@data-test-id="pill-text"]').toHaveTextContaining('Ihar_Vaskaboinikau@epam.com');
         expect('//input[@data-test-id="compose-subject"]').toHaveTextContaining('Test subject') &&
         expect('//div[@data-test-id="rte"]').toHaveTextContaining('Hello, world! Hello, world! Hello, world!');
