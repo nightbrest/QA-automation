@@ -4,7 +4,7 @@ describe("Should proceed to yahoo mail page from yahoo.com/open mail credentials
         await browser.url('https://www.yahoo.com');
         await $('//a[@id="ybarMailLink"]').click();
         expect ($('//div[@id="going-places"]')).toHaveTextContaining("Yahoo Mail");
-    })
+    });
        
     it('Step 2 - Open mail credentials page/ verify that it is correct page', async function() {
         const signInButton = await browser.findElement('xpath','//a[@alt="Sign in"]');
@@ -29,7 +29,7 @@ describe('Should create new email by filiing receiver, subject and message field
         await $('//input[@data-test-id="compose-subject"]').addValue('Test subject');
         await $('//div[@data-test-id="rte"]').addValue('Hello, world! Hello, world! Hello, world!');
         expect('//div[@data-test-id="pill-text"]').toHaveTextContaining('Ihar_Vaskaboinikau@epam.com');
-        expect('//input[@data-test-id="compose-subject"]').toHaveTextContaining('Test subject') &&
+        expect('//input[@data-test-id="compose-subject"]').toHaveTextContaining('Test subject');
         expect('//div[@data-test-id="rte"]').toHaveTextContaining('Hello, world! Hello, world! Hello, world!');
         });
 });
@@ -63,7 +63,7 @@ describe('Should save created email in Drafs folder/ open this email in Drafts f
 
         const sendEmail = await $('//span[@title="ihar_vaskaboinikau@epam.com"][1]');
         const isDisplayed = await sendEmail.isDisplayed();
-        expect(isDisplayed).toHaveValue(false)
+        expect(isDisplayed).toHaveValue(false);
     });   
 });
 
@@ -86,6 +86,5 @@ describe('Should open "Send" folder/ should verify that send email is in "Send" 
         const sighInButton = await $('//div[@role="toolbar"]');
         const sighInButtonisDisplayed = await sighInButton.isDisplayed();
         expect(sighInButtonisDisplayed).toHaveValue(true);
-        
-    });  
+     });  
 })
