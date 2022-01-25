@@ -25,10 +25,10 @@ describe("Should proceed to yahoo mail page from yahoo.com/open mail credentials
 describe('Should create new email by filiing receiver, subject and message fields', ()=> {
     it('Step 4 - should create new email/should verify that all fields are filled correct ', async function() {
         await $('//a[@data-test-id="compose-button"]').click();
-        await $('//input[@id="message-to-field"]').addValue('Ihar_Vaskaboinikau@epam.com');
+        await $('//input[@id="message-to-field"]').addValue('vis_cesar@mail.ru');
         await $('//input[@data-test-id="compose-subject"]').addValue('Test subject');
         await $('//div[@data-test-id="rte"]').addValue('Hello, world! Hello, world! Hello, world!');
-        expect('//div[@data-test-id="pill-text"]').toHaveTextContaining('Ihar_Vaskaboinikau@epam.com');
+        expect('//div[@data-test-id="pill-text"]').toHaveTextContaining('vis_cesar@mail.ru');
         expect('//input[@data-test-id="compose-subject"]').toHaveTextContaining('Test subject');
         expect('//div[@data-test-id="rte"]').toHaveTextContaining('Hello, world! Hello, world! Hello, world!');
         });
@@ -40,13 +40,13 @@ describe('Should save created email in Drafs folder/ open this email in Drafts f
     });
     
     it('Step 6 - should open last email in drafts/ should verify that body of draft email is correct', async function() {
-        const draftEmailRef = await browser.findElement('xpath', '//span[@title="ihar_vaskaboinikau@epam.com"][1]');
+        const draftEmailRef = await browser.findElement('xpath', '//span[@title="vis_cesar@mail.ru"][1]');
         const correctEmail = await $(draftEmailRef);
         await correctEmail.click();
        
         const receiverValue = await $('//div[@data-test-id="pill"]');
         const receiverValueAttr = await receiverValue.getAttribute('title');
-        expect(receiverValueAttr).toEqual('Ihar_Vaskaboinikau@epam.com <ihar_vaskaboinikau@epam.com>');
+        expect(receiverValueAttr).toEqual('vis_cesar@mail.ru <vis_cesar@mail.ru>');
 
         const subjectValue = await $('//input[@data-test-id="compose-subject"]');
         const  subjectValueAttr = await subjectValue.getAttribute('value');
@@ -61,9 +61,9 @@ describe('Should save created email in Drafs folder/ open this email in Drafts f
         await $('//button[@data-test-id="compose-send-button"]').click();
         await $('//span[@data-test-folder-name="Draft"]').click();
 
-        const sendEmail = await $('//span[@title="ihar_vaskaboinikau@epam.com"][1]');
+        const sendEmail = await $('//span[@title="vis_cesar@mail.ru"][1]');
         const isDisplayed = await sendEmail.isDisplayed();
-        expect(isDisplayed).toHaveValue(false);
+        expect(isDisplayed).toHaveValue(false)
     });   
 });
 
@@ -71,7 +71,7 @@ describe('Should open "Send" folder/ should verify that send email is in "Send" 
     it('Step 8 - Should open "Send" folder/should verify that send email is in "Send" folder', async function() {
         await $('//span[@data-test-folder-name="Sent"]').click();
 
-        const sendEmail = await $('//span[@title="ihar_vaskaboinikau@epam.com"]');
+        const sendEmail = await $('//span[@title="vis_cesar@mail.ru"]');
         const isDisplayed = await sendEmail.isDisplayed();
         expect(isDisplayed).toHaveValue(true);
     });
@@ -86,5 +86,6 @@ describe('Should open "Send" folder/ should verify that send email is in "Send" 
         const sighInButton = await $('//div[@role="toolbar"]');
         const sighInButtonisDisplayed = await sighInButton.isDisplayed();
         expect(sighInButtonisDisplayed).toHaveValue(true);
-     });  
+        
+    });  
 })
