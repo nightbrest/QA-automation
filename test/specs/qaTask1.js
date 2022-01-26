@@ -7,6 +7,7 @@ describe("Should proceed to yahoo mail page from yahoo.com/open mail credentials
     });
        
     it('Step 2 - Open mail credentials page/ verify that it is correct page', async function() {
+        await $('//a[@alt="Sign in"]').waitForDisplayed({ timeout: 10000 });
         const signInButton = await browser.findElement('xpath','//a[@alt="Sign in"]');
         const existButton = await $(signInButton);
         await existButton.click();
@@ -40,6 +41,7 @@ describe('Should save created email in Drafs folder/ open this email in Drafts f
     });
     
     it('Step 6 - should open last email in drafts/ should verify that body of draft email is correct', async function() {
+        await $('//span[@title="vis_cesar@mail.ru"][1]').waitForDisplayed({ timeout: 10000 });
         const draftEmailRef = await browser.findElement('xpath', '//span[@title="vis_cesar@mail.ru"][1]');
         const correctEmail = await $(draftEmailRef);
         await correctEmail.click();
