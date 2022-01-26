@@ -3,7 +3,7 @@ describe("Should proceed to yahoo mail page from yahoo.com/open mail credentials
     it('Step 1 - Should proceed to yahoo mail page from yahoo.com/ verify that it is mail page', async function() {
         await browser.url('https://www.yahoo.com');
         await $('//a[@id="ybarMailLink"]').click();
-        expect ($('//div[@id="going-places"]')).toHaveTextContaining("Yahoo Mail");
+        expect ($('//img[@alt="Yahoo Mail"]')).toHaveTextContaining("Yahoo Mail");
     });
        
     it('Step 2 - Open mail credentials page/ verify that it is correct page', async function() {
@@ -46,7 +46,7 @@ describe('Should save created email in Drafs folder/ open this email in Drafts f
        
         const receiverValue = await $('//div[@data-test-id="pill"]');
         const receiverValueAttr = await receiverValue.getAttribute('title');
-        expect(receiverValueAttr).toEqual('vis_cesar@mail.ru <vis_cesar@mail.ru>');
+        expect(receiverValueAttr).toEqual('<vis_cesar@mail.ru>');
 
         const subjectValue = await $('//input[@data-test-id="compose-subject"]');
         const  subjectValueAttr = await subjectValue.getAttribute('value');
