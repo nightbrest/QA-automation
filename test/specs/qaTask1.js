@@ -11,7 +11,7 @@ describe("Should proceed to yahoo mail page from yahoo.com/open mail credentials
         const signInButton = await browser.findElement('xpath','//a[@alt="Sign in"]');
         const existButton = await $(signInButton);
         await existButton.click();
-        expect ($('//div[@id="going-places"]')).toHaveAttrContaining('id="login-username-form"');
+        expect ($('//div[@class="login-box right"]')).toHaveAttrContaining('id="login-username-form"');
     });
 
     it("Step 3 - Fill login and password form; proceed to user's personal mail page / verify that it is correct page", async function() {
